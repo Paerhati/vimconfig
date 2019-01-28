@@ -1,9 +1,7 @@
-runtime vimrc
 " ------ Vundle Configurations (DO NOT EDIT) ------
 
-set nocompatible              " be iMproved, required
 filetype off                  " required
-
+set nocompatible              " be iMproved, required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -16,6 +14,7 @@ Plugin 'PProvost/vim-ps1'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'lilydjwg/colorizer'
 Plugin 'itchyny/lightline.vim'
+Plugin 'shime/vim-livedown'
 
 " ------ Vundle Configurations (DO NOT EDIT) -------
 
