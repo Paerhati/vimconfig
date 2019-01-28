@@ -8,6 +8,8 @@
 
 [Vundle](https://github.com/VundleVim/Vundle.vim)
 
+[Fonts](https://github.com/powerline/fonts)
+
 ## Windows
 
 ### Run the following from an Administrator Powershell
@@ -42,3 +44,7 @@ Install Plugins
 
     :PluginInstall
 
+### Font Problems
+
+If your airline is displayed in a strange format, or you vim is complaining about fonts, you must install
+the fonts from [powerline/fonts](https://github.com/powerline/fonts)
