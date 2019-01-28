@@ -15,6 +15,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'lilydjwg/colorizer'
 Plugin 'itchyny/lightline.vim'
 Plugin 'shime/vim-livedown'
+Plugin 'junegunn/fzf'
 
 " ------ Vundle Configurations (DO NOT EDIT) -------
 
