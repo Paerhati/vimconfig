@@ -9,13 +9,14 @@ Plugin 'VundleVim/Vundle.vim'
 
 " ------ Vundle Plugins ------
 
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'PProvost/vim-ps1'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'lilydjwg/colorizer'
-Plugin 'itchyny/lightline.vim'
-Plugin 'shime/vim-livedown'
 Plugin 'junegunn/fzf'
+Plugin 'PProvost/vim-ps1'
+Plugin 'lilydjwg/colorizer'
+Plugin 'shime/vim-livedown'
+Plugin 'itchyny/lightline.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tomasiser/vim-code-dark'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " ------ Vundle Configurations (DO NOT EDIT) -------
 
@@ -25,7 +26,7 @@ filetype plugin indent on    " required
 " ------ Editor Settings ------
 
 syntax on " Turn on Syntax Highlighting
-colorscheme slate
+colorscheme codedark
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -42,6 +43,7 @@ set scrolloff=70                            " Keep the screen vertically centere
 set hlsearch                                " Turn on search highlighting
 set wildchar=<Tab> wildmenu wildmode=full   " Pressing tab will show buffer list
 set vb t_vb=                                " Turn off beeping and flashing >:(
+set laststatus=2                            " Fix for lightline not appearing
 
 " ------ Key Remappings ------
 
