@@ -1,5 +1,5 @@
 " ------ Source Vimrc Files ------
-source airline.vim
+source ~\.vim\airline.vim
 
 " ------ Vundle Configurations (DO NOT EDIT) ------
 
@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 " ------ Vundle Plugins ------
 
 Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'PProvost/vim-ps1'
 Plugin 'tpope/vim-fugitive'
 Plugin 'lilydjwg/colorizer'
@@ -55,7 +56,8 @@ set guioptions-=T
 set guioptions-=r
 set guioptions-=L
 set guioptions+=k
-set guifont=DejaVu_Sans_Mono_for_Powerline:h11
+set guifont=DejaVu_Sans_Mono_for_Powerline:h10
+
 " ------ Key Remappings ------
 
 nnoremap <F9>                   :set wrap!<CR>                              " Toggle Line Wrapping
