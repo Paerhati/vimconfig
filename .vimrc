@@ -18,6 +18,7 @@ Plugin 'PProvost/vim-ps1'
 Plugin 'tpope/vim-fugitive'
 Plugin 'lilydjwg/colorizer'
 Plugin 'shime/vim-livedown'
+Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'vim-airline/vim-airline'
@@ -67,6 +68,7 @@ nnoremap <silent><C-j>          m`:silent +g/\m^\s*$/d<CR>``:noh<CR>        " De
 nnoremap <silent><C-k>          m`:silent -g/\m^\s*$/d<CR>``:noh<CR>        " Delete blank line above
 nnoremap <silent><A-j>          :set paste<CR>m`o<Esc>``:set nopaste<CR>    " Delete blank line below
 nnoremap <silent><A-k>          :set paste<CR>m`O<Esc>``:set nopaste<CR>    " Append blank line above
+nnoremap <silent><leader>nt     :NERDTreeFind<CR>                           " Open NerdTree
 
 " ------ Vim CPP Enhanced Highlighting Config ------
 
