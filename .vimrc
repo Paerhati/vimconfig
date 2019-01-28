@@ -41,14 +41,18 @@ set smartcase
 set scrolloff=70                            " Keep the screen vertically centered on cursor
 set hlsearch                                " Turn on search highlighting
 set wildchar=<Tab> wildmenu wildmode=full   " Pressing tab will show buffer list
+set vb t_vb=                                " Turn off beeping and flashing >:(
 
 " ------ Key Remappings ------
 
 nnoremap <F9>                   :set wrap!<CR>                              " Toggle Line Wrapping
-nnoremap <silent> <leader>nb    :set relativenumber!<CR>                    " Set Relative Line Numbering
-nnoremap <silent> <C-l>         :nohl<CR><C-l>                              " Hide search highlighting
-nnoremap <silent> <A-j>         :set paste<CR>m`o<ESC>``:set nopaste<CR>    " Paste new line under
-nnoremap <silent> <A-k>         :set paste<CR>m`O<ESC>``:set nopaste<CR>    " Paste new line above
+nnoremap <silent><leader>nb     :set relativenumber!<CR>                    " Set Relative Line Numbering
+nnoremap <silent><C-l>          :nohl<CR>                                   " Hide search highlighting
+nnoremap <silent><C-j>          m`:silent +g/\m^\s*$/d<CR>``:noh<CR>        " Delete blank line below
+nnoremap <silent><C-k>          m`:silent -g/\m^\s*$/d<CR>``:noh<CR>        " Delete blank line above
+
+nnoremap <silent><A-j>          :set paste<CR>m`o<Esc>``:set nopaste<CR>    " Delete blank line below
+nnoremap <silent><A-k>          :set paste<CR>m`O<Esc>``:set nopaste<CR>    " Append blank line above
 
 " ------ Vim CPP Enhanced Highlighting Config ------
 

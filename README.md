@@ -2,6 +2,10 @@
 
 ## Requirements
 
+[Choco](https://chocolatey.org/install)
+
+[FZF](https://github.com/junegunn/fzf)
+
 [Vundle](https://github.com/VundleVim/Vundle.vim)
 
 ## Windows
@@ -12,7 +16,11 @@ CD into your home directory
 
     cd ~
 
-Install Vundle
+Install FZF (If you have not already done so)
+
+    choco install fzf
+
+Install Vundle (If you have no already done so)
 
     git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim
 
