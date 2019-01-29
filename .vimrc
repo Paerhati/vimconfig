@@ -21,6 +21,7 @@ Plugin 'lilydjwg/colorizer'
 Plugin 'shime/vim-livedown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -59,6 +60,9 @@ set guioptions-=r
 set guioptions-=L
 set guioptions+=k
 set guifont=DejaVu_Sans_Mono_for_Powerline:h10
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 " ------ Key Remappings ------
 
@@ -81,3 +85,7 @@ let g:cpp_concepts_highlight = 1
 let g:cpp_no_function_highlight = 1
 let g:airline#extensions#tabline#enabled = 1                                            " Show Buffers
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']     " CtrlP : Ignore files included in .gitignore
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
