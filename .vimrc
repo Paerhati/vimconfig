@@ -15,6 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'PProvost/vim-ps1'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'lilydjwg/colorizer'
 Plugin 'shime/vim-livedown'
@@ -78,4 +79,5 @@ let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:cpp_concepts_highlight = 1
 let g:cpp_no_function_highlight = 1
-let g:airline#extensions#tabline#enabled = 1                        " Show Buffers
+let g:airline#extensions#tabline#enabled = 1                                            " Show Buffers
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']     " CtrlP : Ignore files included in .gitignore
