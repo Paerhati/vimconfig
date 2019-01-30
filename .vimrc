@@ -73,19 +73,23 @@ nnoremap <silent><C-j>          m`:silent +g/\m^\s*$/d<CR>``:noh<CR>        " De
 nnoremap <silent><C-k>          m`:silent -g/\m^\s*$/d<CR>``:noh<CR>        " Delete blank line above
 nnoremap <silent><A-j>          :set paste<CR>m`o<Esc>``:set nopaste<CR>    " Delete blank line below
 nnoremap <silent><A-k>          :set paste<CR>m`O<Esc>``:set nopaste<CR>    " Append blank line above
+nnoremap <silent><A-p>          :CtrlPMRUFiles<CR>                          " Open CtrlP with most rescent files
 nnoremap <silent><leader>nt     :NERDTreeFind<CR>                           " Open NerdTree
 
 " ------ Vim CPP Enhanced Highlighting Config ------
 
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+
+let g:cpp_concepts_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_no_function_highlight = 1
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
-let g:cpp_class_decl_highlight = 1
-let g:cpp_concepts_highlight = 1
-let g:cpp_no_function_highlight = 1
-let g:airline#extensions#tabline#enabled = 1                                            " Show Buffers
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']     " CtrlP : Ignore files included in .gitignore
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+
+let g:airline#extensions#tabline#enabled = 1
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
 let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_cpp_checkers = ['gcc']
