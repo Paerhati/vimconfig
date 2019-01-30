@@ -33,7 +33,6 @@ Clone the repository
 Point to your new vimrc
 (⚠ Warning this will remove your current .vimrc configuration file)
 
-
     echo "source ~/.vim/.vimrc" > .vimrc
 
 Launch  Vim
@@ -43,6 +42,15 @@ Launch  Vim
 Install Plugins
 
     :PluginInstall
+
+Install YouCompleteMe (With c++ Support)
+
+    cd ~\.vim\bundle\YouCompleteMe
+    python install.py --clang-completer
+
+Install LiveDown
+
+    npm install -g livedown
 
 ### Font Problems
 
