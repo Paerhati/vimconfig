@@ -35,14 +35,6 @@ Point to your new vimrc
 
     echo "source ~/.vim/.vimrc" > .vimrc
 
-Launch  Vim
-
-    vim
-
-Install Plugins
-
-    :PluginInstall
-
 Install YouCompleteMe (With c++ Support)
 
     cd ~\.vim\bundle\YouCompleteMe
@@ -51,6 +43,14 @@ Install YouCompleteMe (With c++ Support)
 Install LiveDown
 
     npm install -g livedown
+
+Launch  Vim
+
+    vim
+
+Install Plugins
+
+    :PluginInstall
 
 ### Font Problems
 
