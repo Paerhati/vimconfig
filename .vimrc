@@ -34,12 +34,6 @@ filetype plugin indent on    " required
 
 " ------ Editor Settings ------
 
-syntax on " Turn on Syntax Highlighting
-colorscheme codedark
-
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-
 set encoding=utf-8
 set bs=2
 set tabstop=4
@@ -64,6 +58,12 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+syntax on
+colorscheme codedark
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
 " ------ Key Remappings ------
 
 nnoremap <F9>                   :set wrap!<CR>                              " Toggle Line Wrapping
@@ -71,6 +71,8 @@ nnoremap <silent><leader>nb     :set relativenumber!<CR>                    " Se
 nnoremap <silent><C-l>          :nohl<CR>                                   " Hide search highlighting
 nnoremap <silent><C-j>          m`:silent +g/\m^\s*$/d<CR>``:noh<CR>        " Delete blank line below
 nnoremap <silent><C-k>          m`:silent -g/\m^\s*$/d<CR>``:noh<CR>        " Delete blank line above
+nnoremap <silent><C-f>          :CtrlPLine<CR>                              " Initiate CtrlP line search
+nnoremap <silent><A-f>          :CtrlPLine %<CR>                            " Initiate CtrlP line search in only the current buffer
 nnoremap <silent><A-j>          :set paste<CR>m`o<Esc>``:set nopaste<CR>    " Delete blank line below
 nnoremap <silent><A-k>          :set paste<CR>m`O<Esc>``:set nopaste<CR>    " Append blank line above
 nnoremap <silent><A-p>          :CtrlPMRUFiles<CR>                          " Open CtrlP with most rescent files
@@ -90,6 +92,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 let g:syntastic_check_on_wq = 0
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_cpp_checkers = ['gcc']
