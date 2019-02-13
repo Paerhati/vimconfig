@@ -21,6 +21,7 @@ Plugin 'lilydjwg/colorizer'
 Plugin 'shime/vim-livedown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'vim-airline/vim-airline'
@@ -101,4 +102,5 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 " ------ User Commands ------
 
-:command EditVimProfile e ~\.vim\.vimrc
+command EditVimProfile e ~\.vim\.vimrc
+command EditPowershellProfile e ~\psconfig\profile.ps1
