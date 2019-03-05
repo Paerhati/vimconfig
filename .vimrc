@@ -45,7 +45,6 @@ set ignorecase
 set smartcase
 set scrolloff=70                            " Keep the screen vertically centered on cursor
 set hlsearch                                " Turn on search highlighting
-set wildchar=<Tab> wildmenu wildmode=full   " Pressing tab will show buffer list
 set vb t_vb=                                " Turn off beeping and flashing >:(
 set belloff=all                             " Turn off all unncessary flashing
 set laststatus=2                            " Fix for lightline not appearing
@@ -58,6 +57,8 @@ set guifont=DejaVu_Sans_Mono_for_Powerline:h10
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+set relativenumber
+set wildchar=<Tab> wildmenu wildmode=full   " Pressing tab will show buffer list
 
 syntax on
 colorscheme codedark
