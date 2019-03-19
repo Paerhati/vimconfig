@@ -73,6 +73,7 @@ nnoremap <silent><C-l>          :nohl<CR>
 nnoremap <silent><C-j>          m`:silent +g/\m^\s*$/d<CR>``:noh<CR>
 nnoremap <silent><C-k>          m`:silent -g/\m^\s*$/d<CR>``:noh<CR>
 nnoremap <silent><C-f>          :CtrlPLine<CR>
+nnoremap <silent><C-g>          :Rg<CR>
 nnoremap <silent><C-c>          :bp\|bd #<CR>
 nnoremap <silent><A-f>          :CtrlPLine %<CR>
 nnoremap <silent><A-j>          :set paste<CR>m`o<Esc>``:set nopaste<CR>
