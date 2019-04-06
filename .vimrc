@@ -43,7 +43,6 @@ set expandtab
 set number
 set ignorecase
 set smartcase
-set scrolloff=70                            " Keep the screen vertically centered on cursor
 set hlsearch                                " Turn on search highlighting
 set vb t_vb=                                " Turn off beeping and flashing >:(
 set belloff=all                             " Turn off all unncessary flashing
